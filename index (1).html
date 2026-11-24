@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Portfolio</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="bar"><a class="logo" href="#top">Your Name</a>
+<nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></header>
+<main id="top">
+<section class="hero"><h1>Hi, I'm Your Name.<br>I'm learning to build things that run in the cloud.</h1>
+<p>BSc IT student who builds web apps, IoT projects and live event setups. My goal is a career in cloud computing.</p>
+<a class="btn" href="#projects">See my projects</a></section>
+<section id="about"><h2>About me</h2><p>I study BSc IT and run a small business, SUGHI LED TVL, that provides LED screens and live streaming for events. Running real events taught me to plan, test early and fix problems fast. Now I am adding networking, servers and DevOps to my skills.</p></section>
+<section id="skills"><h2>Skills</h2><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java (learning)</li><li>Networking basics</li><li>Linux and servers (learning)</li><li>Live streaming</li></ul></section>
+<section id="projects"><h2>Projects</h2><div class="grid">
+<article><h3>CoolControl</h3><p>A mobile app connected to an IoT device for monitoring and controlling cooling.</p></article>
+<article><h3>FloodRoute</h3><p>A live map that helps people find safer routes during floods.</p></article>
+<article><h3>SUGHI LED TVL</h3><p>LED video wall and live streaming service for weddings, festivals and college events.</p></article></div></section>
+<section id="contact"><h2>Contact</h2><p>Want to work together? Send a message.</p>
+<form id="form"><label>Name<input required id="n"></label><label>Email<input type="email" required id="e"></label><label>Message<textarea required id="m" rows="4"></textarea></label><button class="btn" type="submit">Send message</button><p id="ok" role="status"></p></form></section>
+</main><footer>&copy; 2026 Your Name</footer>
+<script>document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').textContent='Thanks '+document.getElementById('n').value+', your message is ready to send.';e.target.reset();});</script>
+</body></html>
